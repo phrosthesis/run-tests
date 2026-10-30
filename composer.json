@@ -1,0 +1,39 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "phrosthesis/run-tests",
+    "description": "Prosthesis for run-tests.php.",
+    "keywords": ["phpt", "test", "php5", "php7"],
+    "type": "composer-plugin",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexey Tsarkov"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/phrosthesis/run-tests/issues",
+        "source": "https://github.com/phrosthesis/run-tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phrosthesis\\RunTests\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-pcre": "*",
+        "composer-plugin-api": "*"
+    },
+    "require-dev": {
+        "composer/composer": "*"
+    },
+    "suggest": {
+        "ext-curl": "For performing HTTP requests"
+    },
+    "extra": {
+        "class": "Phrosthesis\\RunTests\\PhptLimb",
+        "branch-alias": {
+            "main": "0.x-dev"
+        }
+    }
+}
