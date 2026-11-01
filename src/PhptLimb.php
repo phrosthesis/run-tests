@@ -20,8 +20,6 @@ final class PhptLimb implements PluginInterface, EventSubscriberInterface
      */
     private $runner = 'run-tests.php';
 
-    const BASE_URL = 'https://raw.githubusercontent.com/php/php-srcz';
-
     /**
      * @param string|null $runner
      */
